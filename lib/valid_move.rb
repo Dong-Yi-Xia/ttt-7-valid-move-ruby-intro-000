@@ -3,7 +3,7 @@ def valid_move?(board, index)
   if (index > 8)
     return false
   end
-  
+
   if condition
    (board[index] == " " || board[index] == "")
     return true
