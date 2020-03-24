@@ -4,7 +4,7 @@ def valid_move?(board, index)
     return false
   end
 
-  if (board[index] == " " || board[index] == "")
+  if position_taken?
     return true
   else
     return false
