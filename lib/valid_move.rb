@@ -1,11 +1,11 @@
 # code your #valid_move? method here
-def valid_move?(board, number)
-  index = number.to_i - 1
-  if (index > 8)
+def valid_move?(board, index)
+  index_position = index.to_i - 1
+  if (index_position > 8)
     return false
   end
 
-  if !position_taken?(board, index)
+  if !position_taken?(board, index_position)
     return true
   else
     return false
